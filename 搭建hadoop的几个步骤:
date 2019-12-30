@@ -1,0 +1,15 @@
+1.一台centos Linux机器，然后复制两份。我是安装了一台桌面版的，两台精简版的。两台精简版的没有ipconfig。
+
+虚拟机搭建后以后没有ifconfig命令的解决办法
+https://blog.csdn.net/qq_41395106/article/details/89027987
+一、使用语句：cd /etc/sysconfig/network-scripts/
+二、使用语句vi ifcfg-eno16777736查看你的ifcfg-eno16777736这个文件（文件结尾的数字可能和这串数字不一样）
+三、将ONBOOT改为“yes”在这里插入图片描述
+四、然后重启网卡，输入：service network restart
+五、对于最小化安装CentOs7的没有安装ifconfig，我们安装ifconfig输入：yum install net-tools
+六、下面就可以连接咯！！！
+201912261545 完美解决问题
+
+
+2.创建hadoop用户名密码。
+3.
