@@ -41,6 +41,16 @@ yum install java-1.8.0-openjdk.x86_64
 只能手动下载安装。
 安装好之后因为没有密码所以可以直接用这个命令更改密码:
 mysql -u root
+use mysql 
+update user set password=passworD("root") where user='root';
+
+9.除了用hive启动外，还有一种启动方法，注意hiveserver2 需要在后台启动。
+hiveserver2 &
+然后输入beeline
+!connect jdbc:hive2://master:10000
+hadoop
+123456
+show tables;
 
 
 
