@@ -39,6 +39,9 @@ yum install java-1.8.0-openjdk.x86_64
 
 8.安装mysql
 只能手动下载安装。
+安装好之后因为没有密码所以可以直接用这个命令更改密码:
+mysql -u root
+
 
 
 
