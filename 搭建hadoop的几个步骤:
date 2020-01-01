@@ -35,4 +35,11 @@ yum install java-1.8.0-openjdk.x86_64
 6.解压hadoop
 配置hadoop-env.sh （主要是增加JAVA_HOME环境变量）
 
+7.启动的时候总是提示输入密码。需要将id_rsa.pub加入到authorized_keys里面。
+
+8.安装mysql
+只能手动下载安装。
+
+
+
 
